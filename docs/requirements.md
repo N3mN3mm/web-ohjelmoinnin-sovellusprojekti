@@ -13,7 +13,7 @@ Asiakas haluaa IMDb-tyylisen elokuvapalvelun, jonka erottava tekijä on yhteisö
 - Kaveri: käyttäjä, joka on liittynyt samaan ryhmään
 - Ryhmän ylläpitäjä: hallinnoi omaa ryhmäänsä
 - Moderaattori: poistaa sopimatonta sisältöä
-- Ylläpitäjä (admin): hallinoi käyttäjiä, elokuvia ja moderaattoreita
+- Ylläpitäjä (admin): hallinnoi käyttäjiä, elokuvia ja moderaattoreita
 
 ## Prioriteetit
 
@@ -86,13 +86,29 @@ Priot on ryhmän ehdotus (must/should/could).
 | ID | Vaatimus | Prioriteetti | Tila |
 |----|----------|--------------|------|
 | N1 | Sovellus julkaistaan Azureen | must | ehdotettu |
-| N2 | Tietoturva best practice -tasolla: rate limiting, XSS-suojaus, CSP | must | ehdotettu |
+| N2 | Tietoturva best practice -tasolla, tarkemmat vaatimukset kohdassa Tietoturva | must | ehdotettu |
 | N3 | Hyvä käytettävyys, ei ponnahdusikkunoita | must | ehdotettu |
 | N4 | Asiallinen ulkoasu, värimaailmaa ei ole määritelty | must | ehdotettu |
 | N5 | Mobiilinavigaatio ja responsiivinen CSS | must | ehdotettu |
 | N6 | Kieli aluksi suomi | must | ehdotettu |
 | N7 | Englanti tarvittaessa | could | ehdotettu |
 | N8 | Ruotsi (asiakas mainitsi, tarve epäselvä) | could | ehdotettu |
+
+## Tietoturva
+
+Tietoturva pyritään toteuttamaan best practice -tasolla.
+
+| ID | Vaatimus | Prioriteetti | Tila |
+|----|----------|--------------|------|
+| S1 | Rate limiting kirjautumiseen ja rekisteröitymiseen | must | ehdotettu |
+| S2 | XSS-suojaus: Käyttäjän syöttämä sisältö (arvostelut, listojen nimet, chat) käsitellään turvallisesti | must | ehdotettu |
+| S3 | Content Security Policy (CSP) | must | ehdotettu |
+| S4 | Kaksivaiheinen tunnistautuminen, helppokäyttöinen (ks. F4) | should | ehdotettu |
+| S5 | Salasanat tallennetaan hashattyinä (esim. bcrypt tai argon2), ei selkotekstinä | must | ehdotettu |
+| S6 | Yhteys vain HTTPS:llä tuotannossa | must | ehdotettu |
+| S7 | SQL-injektion esto parametrisoidulla kyselyillä | must | ehdotettu |
+| S8 | Salaisuudet (tietokanta-URL, API-avaimet) ympäristömuuttujina, ei GitHubissa | must | ehdotettu |
+| S9 | Oikeudet tarkistetaan palvelimella: roolit (käyttäjä, ryhmän ylläpitäjä, moderaattori, admin) ja yksityisen ryhmän sisältö vain jäsenille | must | ehdotettu |
 
 ## Rajaukset
 
