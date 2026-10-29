@@ -34,14 +34,12 @@ Tällä hetkellä on käytössä Whatssapp, jossa keskustelevat mielenkiintoisis
 | F10 | Käyttäjätunnuksen voi poistaa | must | ehdotettu |
 | F11 | Käyttäjä voi liittyä ryhmiin | must | ehdotettu |
 | F12 | Näkyvyys arvostelun ajankohdasta ja tekijästä | could | ehdotettu |
-
 | F13 | Elokuvien perustiedot (kuvaus, julisteet yms.) haetaan ulkoisesta elokuvatietokanta-rajapinnasta | must | ehdotettu |
 | F14 | Mahdollisuus hakea elokuvia | must | ehdotettu |
 | F15 | Haun voi tehdä eriperusteille esim. näyttelijä, genre | must | ehdotettu |
 | F16 | Elokuvista näkyy leffateatteri ja näytösajat muutamalta paikkakunnalta | could | ehdotettu |
 | F17 | Käyttäjä voi tehdä listan | must | ehdotettu |
 | F18 | Elokuvalistan voi jakaa linkillä, ei tarvitse käyttäjätunnusta | must | ehdotettu |
-
 | F19 | Ryhmien muodostaminen ja nimeäminen | must |  ehdotettu |
 | F20 | Ryhmän sisällä useammalle voi antaa oikeudet muuttaa ryhmän tietoja | could | ehdotettu |
 | F21 | Ryhmät voi tehdä omia listoja | should | ehdotettu |
@@ -53,7 +51,6 @@ Tällä hetkellä on käytössä Whatssapp, jossa keskustelevat mielenkiintoisis
 | F27 | Ryhmän sisäiset arvostelut ryhmässä | could | ehdotettu |
 | F28 | Keskusteluominaisuus | should | ehdotettu |
 | F29 | Elokuvaehdotuksia | could | ehdotettu |
-
 | F30 | Sopii mobiiliversiolle | must | ehdotettu |
 | F31 | Elokuvalistan voi jakaa linkillä, ei tarvitse käyttäjätunnusta | must | ehdotettu |
 | F32 | Tilastotietoa elokuvista | could | ehdotettu |
